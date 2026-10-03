@@ -540,6 +540,12 @@
   <data name="Rules.ProcessIgnoreList.Description" xml:space="preserve">
     <value>Floating mode will be automatically enabled for windows belonging to one of the processes. Enter one process name per line, excluding the ".exe" extension (e.g. "explorer"). The matching is not case-sensitive and you may use regular expressions.</value>
   </data>
+  <data name="Rules.TitleIgnoreList" xml:space="preserve">
+    <value>Automatically float by window title</value>
+  </data>
+  <data name="Rules.TitleIgnoreList.Description" xml:space="preserve">
+    <value>Floating mode will be automatically enabled for windows whose title matches when they are opened. Use "*" to match any characters and "?" to match a single character (e.g. "*.maxhelp"). To use a regular expression, enclose it in slashes (e.g. "/^Jupyter/"). The matching is not case-sensitive.</value>
+  </data>
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>

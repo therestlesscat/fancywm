@@ -2450,6 +2450,24 @@ namespace FancyWM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Automatically float by window title.
+        /// </summary>
+        public static string Rules_TitleIgnoreList {
+            get {
+                return ResourceManager.GetString("Rules.TitleIgnoreList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Floating mode will be automatically enabled for windows whose title matches when they are opened. Use &quot;*&quot; to match any characters and &quot;?&quot; to match a single character (e.g. &quot;*.maxhelp&quot;). To use a regular expression, enclose it in slashes (e.g. &quot;/^Jupyter/&quot;). The matching is not case-sensitive..
+        /// </summary>
+        public static string Rules_TitleIgnoreList_Description {
+            get {
+                return ResourceManager.GetString("Rules.TitleIgnoreList.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         public static string Settings {
