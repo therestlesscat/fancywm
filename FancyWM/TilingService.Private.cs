@@ -1040,6 +1040,16 @@ namespace FancyWM
                                         return;
                                     }
 
+                                    // The window may have been floated (e.g. by an exclusion rule loaded at startup)
+                                    // after it was queued for registration.
+                                    using (m_floatingSetLock.EnterScope())
+                                    {
+                                        if (m_floatingSet.Contains(e.Source))
+                                        {
+                                            return;
+                                        }
+                                    }
+
                                     var node = m_backend.RegisterWindow(e.Source, maxTreeWidth: m_autoSplitCount);
                                     node.Parent!.Padding = GetPanelPaddingRect();
                                     node.Parent!.Spacing = GetPanelSpacing();
